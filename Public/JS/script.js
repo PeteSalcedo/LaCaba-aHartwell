@@ -1,14 +1,20 @@
-const express = require("express")
-const app = express()
+let menu = document.querySelector('#menu-bars');
+let navbar = document.querySelector('.navbar');
 
-// use the express-static middleware
-app.use(express.static("public"))
+let section = document.querySelectorAll('section');
+let navLinks = document.querySelectorAll('header .navbar a');
 
-// define the first route
-app.get("/", function (req, res) {
-  res.send("<h1>Hello World!</h1>")
-})
+var swiper = new Swiper(".home-slider", {
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 7500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  loop:true,
+});
 
-// start the server listening for requests
-app.listen(process.env.PORT || 3000, 
-	() => console.log("Server is running..."));
