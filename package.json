@@ -1,0 +1,23 @@
+{
+  "name": "LaCabanaHartwell",
+  "version": "1.0.0",
+  "description": "Best Mexican food in town.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PeteSalcedo/LaCabanaHartwell.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PeteSalcedo/LaCabanaHartwell/issues"
+  },
+  "homepage": "https://github.com/PeteSalcedo/LaCabanaHartwell#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
