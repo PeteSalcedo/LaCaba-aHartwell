@@ -1,20 +1,14 @@
-let menu = document.querySelector('#menu-bars');
-let navbar = document.querySelector('.navbar');
+var slideIndex = 0;
+carousel();
 
-let section = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('header .navbar a');
-
-var swiper = new Swiper(".home-slider", {
-  spaceBetween: 30,
-  centeredSlides: true,
-  autoplay: {
-    delay: 7500,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  loop:true,
-});
-
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("slide");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1} 
+  x[slideIndex-1].style.display = "block"; 
+  setTimeout(carousel, 2000); 
+}
