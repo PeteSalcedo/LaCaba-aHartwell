@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>LaCabaña</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="CSS/style.css">
+
+    
+
 </head>
 <body>
 <header>
@@ -22,47 +26,62 @@
         </nav>
     </nav>
 </header>
-    <div class=carousel>
-       <div class="slide">
-        <div class="content">
-            <span>our special dishes</span>
-            <h3>La Cabaña Special </h3>
-            <p>Tender boneless chicken and shrimp, with grilled onions, grated
-                cheese, guacamole salad, sour cream, & choice of rice or beans,
-                served with tortillas</p>
-            <!-- <a href="#" class="btn">order now</a> -->
-        </div>
-                <div class="image">
-                    <img  src="images/TexasNachos.jpeg" alt="">
-                </div>
-        </div>
-        <div class="slide">
+
+<section class="home" id="home">
+
+    <div class="swiper-container home-slider">
+
+        <div class="swiper-wrapper wrapper">
+
+            <div class="swiper-slide slide">
                 <div class="content">
-                    <span>our special dishes</span>
-                    <h3>South of the Border Chicken</h3>
-                    <p>Grilled chicken tenders with banana peppers, onions, mushrooms,
-                        cooked in a cream sauce, served with guacomole salad, sour cream,rice and tortillas</p>
-                    <!-- <a href="#" class="btn">order now</a> -->
+                    <span>our special dish</span>
+                    <h3>La Cabaña Special</h3>
+                    <p>Tender boneless chicken and shrimp, with grilled onions, grated
+                        cheese, guacamole salad, sour cream, & choice of rice or beans,
+                        served with tortillas</p>
+                    <a href="#" class="btn">order now: (706) 377-3959</a>
                 </div>
                 <div class="image">
-                    <img  src="images/South of the border chicken.jpeg" alt="">
+                    <img src="images/lacabanaspecial.jpg" alt="">
                 </div>
-        </div>
-        <div class="slide">
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="content">
+                    <span>our special dish</span>
+                    <h3>South of the Border Chicken</h3>
+                    <p>TGrilled chicken tenders with banana peppers, onions, mushrooms,
+                        cooked in a cream sauce, served with guacomole salad, sour cream,rice and tortillas</p>
+                    <a href="#" class="btn">order now: (706) 377-3959</a>
+                </div>
+                <div class="image">
+                    <img src="images/South of the border chicken.jpeg" alt="">
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
                 <div class="content">
                     <span>our special dish</span>
                     <h3>Steak Ranchero</h3>
                     <p>Grilled ribeye steak topped with chopped onions, bell peppers
                         and tomatoes, served with rice, beans, guacamole salad, andthree flour tortillas</p>
-                    <!-- <a href="#" class="btn">order now</a> -->
+                    <a href="#" class="btn">order now: (706) 377-3959</a>
                 </div>
                 <div class="image">
-                    <img  src="images/steak.jpeg" alt="">
+                    <img src="images/steak.jpeg" alt="">
                 </div>
+            </div>
+
         </div>
+
+        <div class="swiper-pagination"></div>
+
     </div>
-    
-    <section class="about" id="about">
+
+</section>
+
+<section class="about" id="about">
 
         <h3 class="sub-heading"> about us </h3>
         <h1 class="heading"> why choose us? </h1>
@@ -78,10 +97,6 @@
                 <p>Everyday Lunch Specials Mon-Sun. Monday Lunch - Speedy Gonzales. (One Taco, One Enchilada, Choice Of Rice or Beans For $4.25/ Tuesday Lunch #2 - One Beef Burrito, Mexican Rice And Fried beans For $4.95/ Wednesday Lunch - Pollo Fundido, Flour Tortilla Deep-Fried With Chicken, Topped With Sour Cream, Nacho Cheese, Rice And Salad $4.95/ Thursday Lunch Burrito Deluxe, A Soft Flour Tortilla Filed With Delicious Pork, Tenderloin or Chicken, With Lettuce, Tomato, Guacamole, And Sour Cream $4.45/ Friday Lunch #9 One Burrito, One Enchilada, Choice of Rice Or Beans $5.25/ Saturday Lunch - Fajitas-Lunch Only A Lunch-sized portion of Our Sizzling Fajitas, Choice of beef or chicken with bell peppers and green onions, served with guacamole, beans with cheese, tomatoes and three flour tortillas $7.95/ Sunday Combinations #18 One Burrito, One Taco, Rice And Refried Beans $6.95.</p>
                 <div class="icons-container">
                     <div class="icons">
-                        <i class="fas fa-shipping-fast"></i>
-                        <span>free delivery</span>
-                    </div>
-                    <div class="icons">
                         <i class="fas fa-dollar-sign"></i>
                         <span>easy payments</span>
                     </div>
@@ -89,12 +104,17 @@
                         <i class="fas fa-headset"></i>
                         <span>24/7 service</span>
                     </div>
+                    <div class="icons">
+                        <i class="fas fa-headset"></i>
+                        <span>(706) 377-3959</span>
+                    </div>
                 </div>
             </div>
     
         </div>
     
-    </section>
+</section>
+
 <section class="menu" id="menu">
 
     <h3 class="sub-heading"> our menu </h3>
@@ -398,7 +418,7 @@
         </div>
     </div>
 </section>
-
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="JS/script.js"></script>
 </body>
 </html>
