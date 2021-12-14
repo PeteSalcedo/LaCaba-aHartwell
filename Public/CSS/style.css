@@ -86,39 +86,6 @@ header .icons a:hover{
     background: var(--green);
     transform: rotate(360deg);
 }
-
-/* .slide{
-    gap:2rem; 
-    padding-top: 9rem;
-}
-.slide .content{
-    float:left;
-    width: 60%;
-    padding-left: 30px;
-}
-.slide .content span{
-    color:var(--green);
-    font-size: 2.5rem;
-}
-.slide .content h3{
-    color:var(--black);
-    font-size: 7rem;
-}
-.slide .content p{
-    color:var(--light-color);
-    font-size: 2.2rem;
-    padding:.5rem 0;
-    line-height: 1.5;
-}
-.slide .image img{
-    padding-left: 20px;
-    width:40%;
-    height: 100%;
-    float: right;
-}
-.carousel{
-    display: flex;
-} */
 .menu .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -258,13 +225,6 @@ header .icons a:hover{
     font-size: 1.5rem;
     color:var(--black);
 }
-
-
-
-
-
-
-
 
 .home .home-slider .slide{
     display: flex;
