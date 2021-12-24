@@ -81,6 +81,8 @@
 
 </section>
 
+
+
 <section class="about" id="about">
 
         <h3 class="sub-heading"> about us </h3>
@@ -114,8 +116,12 @@
         </div>
     
 </section>
-
-<section class="menu" id="menu">
+<div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'foodmenu')">Food</button>
+    <button class="tablinks" onclick="openCity(event, 'drinks-menu')">Drinks</button>
+    <button class="tablinks" onclick="openCity(event, 'licour-menu')">Licour</button>
+  </div>
+<section class="foodmenu tabcontent" id="foodmenu">
 
     <h3 class="sub-heading"> our menu </h3>
     <h1 class="heading"> today's speciality </h1>
@@ -420,7 +426,7 @@
 </section>
 
 
-<section class="menu" id="menu">
+<section class="foodmenu tabcontent" id="drinks-menu">
 
     <h3 class="sub-heading"> Our Drinks </h3>
     <h1 class="heading"> </h1>
@@ -506,7 +512,7 @@
     </div>
 </section>
 
-<section class="menu" id="menu">
+<section class="foodmenu tabcontent" id="beer-menu">
 
     <h3 class="sub-heading"> Beer </h3>
     <h1 class="heading">Imported Beer </h1>
@@ -593,7 +599,7 @@
     </div>
 </section>
 
-<section class="menu" id="menu">
+<section class="foodmenu tabcontent" id="licour-menu">
 
     <h3 class="sub-heading"> Licor </h3>
     <h1 class="heading">Specialty Licours</h1>

@@ -86,20 +86,20 @@ header .icons a:hover{
     background: var(--green);
     transform: rotate(360deg);
 }
-.menu .box-container{
+.foodmenu .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap:1.5rem;
 }
 
-.menu .box-container .box{
+.foodmenu .box-container .box{
     background: #fff;
     border:.1rem solid rgba(0,0,0,.2);
     border-radius: .5rem;
     box-shadow: var(--box-shadow);    
 }
 
-.menu .box-container .box .image{
+.foodmenu .box-container .box .image{
     height: 25rem;
     width: 100%;
     padding:1.5rem;
@@ -107,14 +107,14 @@ header .icons a:hover{
     position: relative;
 }
 
-.menu .box-container .box .image img{
+.foodmenu .box-container .box .image img{
     height: 100%;
     width: 100%;
     border-radius: .5rem;
     object-fit: cover;
 }
 
-.menu .box-container .box .image .fa-heart{
+.foodmenu .box-container .box .image .fa-heart{
     position: absolute;
     top:2.5rem; right: 2.5rem;
     height: 5rem;
@@ -127,38 +127,38 @@ header .icons a:hover{
     color:var(--black);
 }
 
-.menu .box-container .box .image .fa-heart:hover{
+.foodmenu .box-container .box .image .fa-heart:hover{
     background-color: var(--green);
     color:#fff;
 }
 
-.menu .box-container .box .content{
+.foodmenu .box-container .box .content{
     padding:2rem;
     padding-top: 0;
 }
 
-.menu .box-container .box .content .stars{
+.foodmenu .box-container .box .content .stars{
     padding-bottom: 1rem;
 }
 
-.menu .box-container .box .content .stars i{
+.foodmenu .box-container .box .content .stars i{
    font-size: 1.7rem;
    color:var(--green);
 }
 
-.menu .box-container .box .content h3{
+.foodmenu .box-container .box .content h3{
     color:var(--black);
     font-size: 2.5rem;
 }
 
-.menu .box-container .box .content p{
+.foodmenu .box-container .box .content p{
     color:var(--light-color);
     font-size: 1.6rem;
     padding:.5rem 0;
     line-height: 1.5;
 }
 
-.menu .box-container .box .content .price{
+.foodmenu .box-container .box .content .price{
     color:var(--green);
     margin-left: 1rem;
     font-size: 2.5rem;
@@ -398,3 +398,41 @@ section:nth-child(even){
 .footer .credit span{
     color:var(--green);
 }
+
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
